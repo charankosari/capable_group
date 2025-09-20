@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
 
 export function BackgroundBeams({ className }: { className?: string }) {
   const beamsRef = useRef<HTMLDivElement>(null);
@@ -54,7 +53,7 @@ export function BackgroundBeams({ className }: { className?: string }) {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [isClient]);
 
   if (!isClient) {
     return (

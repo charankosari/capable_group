@@ -201,7 +201,7 @@ export function Hero() {
 
           {/* Stats */}
           <div ref={statsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {stats.map((stat, index) => {
+            {stats.map((stat) => {
               const IconComponent = stat.icon;
               return (
                 <motion.div

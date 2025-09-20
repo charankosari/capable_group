@@ -18,8 +18,6 @@ import {
   Globe,
   Palette,
   BarChart3,
-  Search,
-  PenTool,
 } from "lucide-react";
 
 // Register ScrollTrigger only on client-side
@@ -170,7 +168,7 @@ export function Services() {
 
         {/* Main Services Grid */}
         <div ref={cardsRef} className="grid md:grid-cols-2 gap-8 mb-16">
-          {services.map((service, index) => {
+          {services.map((service) => {
             const IconComponent = service.icon;
             return (
               <motion.div
@@ -247,7 +245,7 @@ export function Services() {
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {additionalServices.map((service, index) => {
+            {additionalServices.map((service) => {
               const IconComponent = service.icon;
               return (
                 <motion.div
@@ -278,7 +276,7 @@ export function Services() {
               Ready to Transform Your Business?
             </h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Let's discuss your project and create a customized solution that drives results and exceeds expectations.
+              Let&apos;s discuss your project and create a customized solution that drives results and exceeds expectations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70">

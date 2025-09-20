@@ -22,8 +22,6 @@ import {
   Phone,
   MapPin,
   Send,
-  Clock,
-  MessageSquare,
   Users,
   CheckCircle,
   Zap,
@@ -268,7 +266,7 @@ export function Contact() {
                 Thank You!
               </h2>
               <p className="text-lg text-muted-foreground">
-                Your message has been sent successfully. We'll get back to you within 24 hours.
+                Your message has been sent successfully. We&apos;ll get back to you within 24 hours.
               </p>
             </div>
           </motion.div>
@@ -286,11 +284,11 @@ export function Contact() {
             Get In Touch
           </Badge>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Let's Start Your
+            Let&apos;s Start Your
             <span className="block text-primary">Digital Journey</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your business? Get in touch with our team and let's discuss how we can help you achieve your goals.
+            Ready to transform your business? Get in touch with our team and let&apos;s discuss how we can help you achieve your goals.
           </p>
         </div>
 
@@ -302,7 +300,7 @@ export function Contact() {
                 <div className="mb-8">
                   <h3 className="text-2xl font-bold text-foreground mb-2">Send us a message</h3>
                   <p className="text-muted-foreground">
-                    Fill out the form below and we'll get back to you as soon as possible.
+                    Fill out the form below and we&apos;ll get back to you as soon as possible.
                   </p>
                 </div>
 
@@ -461,13 +459,13 @@ export function Contact() {
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6">Get in touch with us</h3>
               <p className="text-muted-foreground mb-8">
-                We're here to help you bring your digital vision to life. Reach out through any of these channels.
+                We&apos;re here to help you bring your digital vision to life. Reach out through any of these channels.
               </p>
             </div>
 
             {/* Contact Cards */}
             <div className="space-y-6">
-              {contactInfo.map((info, index) => {
+              {contactInfo.map((info) => {
                 const IconComponent = info.icon;
                 return (
                   <div key={info.title} className="contact-card">
@@ -527,7 +525,7 @@ export function Contact() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => {
+            {features.map((feature) => {
               const IconComponent = feature.icon;
               return (
                 <div key={feature.title} className="feature-card">
@@ -553,7 +551,7 @@ export function Contact() {
               Ready to Get Started?
             </h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Schedule a free consultation today and let's discuss how we can help transform your business with our digital solutions.
+              Schedule a free consultation today and let&apos;s discuss how we can help transform your business with our digital solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70">

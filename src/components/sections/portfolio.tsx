@@ -7,17 +7,16 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { LucideIcon } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   ExternalLink,
   Github,
   ArrowRight,
   Code,
-  Smartphone,
   TrendingUp,
   Users,
   Eye,
-  Calendar,
   Award,
   Zap,
 } from "lucide-react";
@@ -41,7 +40,7 @@ interface Project {
   metrics: {
     label: string;
     value: string;
-    icon: any;
+    icon: LucideIcon;
   }[];
   featured: boolean;
   year: string;
@@ -238,8 +237,8 @@ export function Portfolio() {
             <span className="block text-primary">Success Stories</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore our recent projects and see how we've helped businesses transform their digital presence and achieve remarkable results.
-          </p>
+  Explore our recent projects and see how we&apos;ve helped businesses transform their digital presence and achieve remarkable results.
+</p>
         </div>
 
         {/* Featured Projects */}
@@ -435,8 +434,8 @@ export function Portfolio() {
               Ready to Create Your Success Story?
             </h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Let's collaborate on your next project and create something amazing together. We're excited to bring your vision to life.
-            </p>
+  Let&apos;s collaborate on your next project and create something amazing together. We&apos;re excited to bring your vision to life.
+</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70">
                 Start Your Project

@@ -39,7 +39,7 @@ const SelectContext = React.createContext<{
   onValueChange?: (value: string) => void
 }>({})
 
-function Select({ value, onValueChange, children, required }: SelectProps) {
+function Select({ value, onValueChange, children }: SelectProps) {
   return (
     <SelectContext.Provider value={{ value, onValueChange }}>
       <DropdownMenu>

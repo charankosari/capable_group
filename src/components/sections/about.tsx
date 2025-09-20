@@ -12,9 +12,7 @@ import {
   Eye,
   Heart,
   Users,
-  Award,
-  TrendingUp,
-  Globe,
+
   Star,
   Quote,
   ArrowRight,
@@ -251,7 +249,7 @@ export function About() {
             <span className="block text-primary">Excellence</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We're a team of passionate professionals dedicated to delivering innovative digital solutions that transform businesses and create lasting impact.
+            We&apos;re a team of passionate professionals dedicated to delivering innovative digital solutions that transform businesses and create lasting impact.
           </p>
         </div>
 
@@ -319,7 +317,7 @@ export function About() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => {
+            {values.map((value) => {
               const IconComponent = value.icon;
               return (
                 <div key={value.title} className="value-card">
@@ -377,17 +375,17 @@ export function About() {
         <div className="testimonials">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">What Our Clients Say</h3>
-            <p className="text-muted-foreground">Real feedback from businesses we've helped transform</p>
+            <p className="text-muted-foreground">Real feedback from businesses we&apos;ve helped transform</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            {testimonials.map((testimonial, index) => (
+            {testimonials.map((testimonial) => (
               <div key={testimonial.name} className="testimonial">
                 <Card className="h-full shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-8">
                     <Quote className="w-8 h-8 text-primary mb-4" />
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      "{testimonial.content}"
+                    &quot;{testimonial.content}&quot;
                     </p>
                     <div className="flex items-center mb-4">
                       {Array.from({ length: testimonial.rating }).map((_, i) => (
@@ -417,7 +415,7 @@ export function About() {
               Ready to Start Your Journey?
             </h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join hundreds of satisfied clients who've transformed their businesses with our digital solutions.
+              Join hundreds of satisfied clients who&apos;ve transformed their businesses with our digital solutions.
             </p>
             <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70">
               Get Started Today

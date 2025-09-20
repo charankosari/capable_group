@@ -129,10 +129,11 @@ export function Hero() {
 
   return (
     <section
-      id="home"
-      ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-muted/20"
-    >
+    id="home"
+    ref={heroRef}
+    className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 pt-20 sm:pt-28"
+  >
+  
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <BackgroundBeams />
